@@ -8,15 +8,26 @@
 
 </head>
 <body>
+	<h1>Tasks for the Day</h1>
 	<ul>
-		<?php foreach ( $person as $key => $val ) : ?>
-			<li><strong><?= $key; ?>: </strong><?= $val; ?></li>
-		<?php endforeach; ?>
+		<li>
+		<strong>Title: <?= $task['title'] ?></strong>
+		</li>
 	</ul>
-	<div>
-		<?php foreach ($task as $key => $val) : ?>
-			<strong><?= ucwords($key); ?>: </strong><?= $val; ?>
-		<?php endforeach; ?>
-	</div>
+	<ul>
+		<li>
+			<strong>Day Due: <?= $task['due'] ?></strong>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<strong>Person responsible for Task: <?= $task['assigned_to'] ?></strong>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<strong>Status: <?= $task['completed'] ? 'Completed' : 'Incomplete'; ?></strong>
+		</li>
+	</ul>
 </body>
 </html>
