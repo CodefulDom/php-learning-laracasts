@@ -15,7 +15,7 @@
 	</ul>
 	<div>
 		<?php foreach ($task as $key => $val) : ?>
-			<strong><?= $key; ?>: </strong><?= $val; ?>
+			<strong><?= ucwords($key); ?>: </strong><?= $val; ?>
 		<?php endforeach; ?>
 	</div>
 </body>
