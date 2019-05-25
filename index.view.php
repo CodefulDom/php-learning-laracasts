@@ -26,7 +26,7 @@
 	</ul>
 	<ul>
 		<li>
-			<strong>Status: <?= $task['completed'] ? 'Completed' : 'Incomplete'; ?></strong>
+			<strong>Status: <?= $task['completed'] ? 'Completed ✅' : 'Incomplete ❌'; ?></strong>
 		</li>
 	</ul>
 </body>

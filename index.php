@@ -10,7 +10,7 @@ $task = [
 	'title' => 'Cut the grass',
 	'due' => 'Monday',
 	'assigned_to' => 'Dom',
-	'completed' => false
+	'completed' => true
 ];
 
 
